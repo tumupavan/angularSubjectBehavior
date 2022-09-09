@@ -1,0 +1,11 @@
+<p>dashboard </p>
+
+
+Items in cart: {{cartTotal}}
+Items in favorite: {{favoriteTotal}}
+
+<div> alternate way</div>
+Items in cart: {{ (cartObservable$ | async)?.cartTotal }}
+
+
+

@@ -1,0 +1,19 @@
+<p>table </p>
+
+
+<table>
+    <thead>
+        <th>
+            Item Available
+        </th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of itemList">
+            <td>
+                <button *ngIf="!item.inCart" (click)="addToCart(item)">Add to cart</button>
+                <button *ngIf="!item.isFavorite" (click)="addToWishList(item)">Add to wishlist</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
